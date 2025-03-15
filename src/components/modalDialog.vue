@@ -1,46 +1,45 @@
 <template>
-    <Teleport to="body">
-      <div v-if="statusVisible" class="modal-overlay">
-        <div class="modal-content" >
-          <h2>{{title}}</h2>
-          <p>{{message}}</p>
-  
-          <div v-if="discountCode" class="code-container">
-            <span>{{ discountCode }}</span>
-            <button class="copy" @click="copyCode">کپی</button>
-          </div>
-  
-  
-          <div class="modal-actions">
-            <button  @click="closeModal" class="btn-confirm">باشه</button>
-          </div>
+  <Teleport to="body">
+    <div v-if="statusVisible" class="modal-overlay">
+      <div class="modal-content" >
+        <h2>{{title}}</h2>
+        <p>{{message}}</p>
+
+        <div v-if="discountCode" class="code-container">
+          <span>{{ discountCode }}</span>
+          <button class="copy" @click="copyCode">Copy</button>
+        </div>
+
+        <div class="modal-actions">
+          <button @click="closeModal" class="btn-confirm">Okay</button>
         </div>
       </div>
-    </Teleport>
+    </div>
+  </Teleport>
+</template>
 
-  </template>
-  
-  <script>
-  export default {
-    props: {
-    statusVisible: Boolean,
-      title: String,
-      message: String,
-      discountCode: String,
-    },
-    methods: {
-      closeModal() {
-        this.$emit("visible", false);
-      },
-     
-      copyCode() {
-        navigator.clipboard.writeText(this.discountCode).then(() => {
-          alert("کد تخفیف کپی شد!");
-        });
-      },
-    },
-  };
-  </script>
+<script>
+export default {
+props: {
+  statusVisible: Boolean,
+  title: String,
+  message: String,
+  discountCode: String,
+},
+methods: {
+  closeModal() {
+    this.$emit("visible", false);
+  },
+ 
+  copyCode() {
+    navigator.clipboard.writeText(this.discountCode).then(() => {
+      alert("Discount code copied!");
+    });
+  },
+},
+};
+</script>
+
   
   <style scoped>
   h2{
