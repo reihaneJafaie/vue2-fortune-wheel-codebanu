@@ -163,10 +163,10 @@ styleWheel: {
 ## Screenshots
 
 ### Spinning Wheel
-![Spinning Wheel](attachment://file-LAkf8hnFc1qYSkxty68j9X)
+![Spinning Wheel](./src/assets/images/wheel/wheel1.PNG)
 
 ### Winning Modal Dialog
-![Winning Modal](attachment://file-4NhMotZ1wsmoywbh2nsKBJ)
+![Winning Modal](./src/assets/images/wheel/Capture2.PNG)
 
 ## License
 
