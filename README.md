@@ -173,6 +173,13 @@ styleWheel: {
 },
 ```
 
+
+## Demo
+
+You can see a live demo of the **Vue 2 Fortune Wheel** here:
+👉 [Live Demo](https://vue2-fortune-wheel-codebanu.vercel.app/)
+
+
 ## Screenshots
 
 ### Spinning Wheel
@@ -196,3 +203,9 @@ Feel free to contribute to this project! Submit pull requests or report issues o
 If you have any questions or need support, please open an issue on GitHub or contact the maintainer.
 
 Enjoy spinning! 🎡✨
+
+
+
+
+
+
