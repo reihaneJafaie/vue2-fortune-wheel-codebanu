@@ -149,15 +149,28 @@ You can customize the wheel with the `styleWheel` prop:
 ```js
 styleWheel: {
   colorText: "black",
-  font: "bold 16px Arial",
-  textAlign: "center",
-  shadow: {
-    shadowColor: "rgba(0, 0, 0, 0.5)",
-    shadowBlur: 14,
-    shadowOffsetX: 0,
-    shadowOffsetY: 0
-  }
-}
+  twoLineText: {
+    status:false,
+    outlineColor: "#000",
+    inlineColor: "#fff",
+    lineWidth: 3,
+    },
+    font: "bold 16px Arial",
+    textAlign: "center",
+    textBaseline: "middle",
+    textOrientation: "vertical",
+    // textOrientation : 'horizontal',
+    shadow: {
+      shadowColor: "rgba(0, 0, 0, 0.5)",
+      shadowBlur: 14, // shadow blur level
+      shadowOffsetX: 0, // shadow offset in X axis
+      shadowOffsetY: 0, // shadow offset in Y axis
+    },
+    // stroke:{
+    //   lineWidth : 10,
+    //   color : '#000'
+    // }
+},
 ```
 
 ## Screenshots
